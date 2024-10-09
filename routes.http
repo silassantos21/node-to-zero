@@ -44,3 +44,52 @@ GET http://localhost:3333/videos
 
 GET http://localhost:3333/videos?search=node
 
+###
+
+
+POST https://node-to-zero.onrender.com/videos
+Content-Type: application/json
+Accept-Language: pt
+
+{
+    "title": "Video 01",
+    "description": "Esse é o meu primeiro video",
+    "duration": 500
+}
+
+###
+
+POST https://node-to-zero.onrender.com/videos
+Content-Type: application/json
+Accept-Language: pt
+
+{
+    "title": "Video node",
+    "description": "Esse é o meu primeiro node",
+    "duration": 500
+}
+
+###
+
+PUT https://node-to-zero.onrender.com/videos/01c90b0a-b9cb-4d99-8d7f-9cf8e6a05eee
+Content-Type: application/json
+Accept-Language: pt
+
+{
+    "title": "Video 01 Bananinha",
+    "description": "Esse é o meu primeiro vídeo Bananinha",
+    "duration": 200
+}
+
+###
+
+DELETE https://node-to-zero.onrender.com/videos/162ad7dc-8c9c-4352-8625-ff0c1b7eb605
+
+###
+
+GET https://node-to-zero.onrender.com/videos
+
+###
+
+GET https://node-to-zero.onrender.com/videos?search=node
+
